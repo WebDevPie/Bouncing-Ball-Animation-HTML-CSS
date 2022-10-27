@@ -1,0 +1,35 @@
+body {
+    margin:0; 
+    background-color: #201e1f;
+}
+
+.wrapper {
+    position: relative;
+    background-color: #00aeff;
+    margin: 30px auto 0;
+    width: 650px;
+    height: 500px;
+    box-shadow: inset 0 0 5px #000;
+    border-radius: 10px;
+}
+
+.ball {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(./img/water-polo-ball.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 20px 20px 4px rgba(0, 0, 0, .08);
+    animation: goX 1.2s linear 0s infinite alternate, goY 1.55s linear 0s infinite alternate;
+}
+
+@keyframes goX {
+    from {left: 0;} to {left: 610px}
+}
+
+@keyframes goY {
+    from {top: 0;} to {top: 460px;}
+}
